@@ -26,9 +26,9 @@
 def donuts(count):
   # +++your code here+++
   if count < 10:
-      print ('Number of donuts: ') + str(count)
+      return ('Number of donuts: ') + str(count)
   else:
-      print ('Number of donuts: many')    
+      return ('Number of donuts: many')    
   return
 
 
@@ -39,8 +39,12 @@ def donuts(count):
 # is less than 2, return instead the empty string.
 def both_ends(s):
   # +++your code here+++
-  print s[0:1]
-  return
+  if len(s) < 2:
+      return ''
+  first_slice = s[0:2]
+  second_slice = s[-2:]
+  return first_slice + second_slice
+
 
 
 # C. fix_start
