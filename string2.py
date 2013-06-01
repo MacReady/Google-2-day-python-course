@@ -33,8 +33,8 @@ def verbing(s):
 def not_bad(s):
   not_find = s.find('not')
   bad_find = s.find('bad')
-  if n != -1 and b != -1 and b > n:
-    s = s[0:n] + 'good' s[b+3:]
+  if not_find != -1 and bad_find != -1 and bad_find > not_find:
+    s = s[0:not_find] + 'good' + s[bad_find+3:]
   return s
 
 
